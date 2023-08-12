@@ -116,7 +116,7 @@ nav {
 .banner-img{
 	border-radius: 0px 0px 0px 138px;
 	background: lightgray 80% / cover no-repeat;
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);s
 }
 
 .proj-button {
@@ -168,52 +168,13 @@ nav {
   color: #31274b;
 }
 
-
-/*-----------------------------------------------*/
-/*Skills*/
-.second-color {
- 	color: #31274b;
-}
-
-.h-auto {
-	height: auto;
-}
-/*.bg-light{
-	margin-left: 0px;
-}*/
-
-.rounded-im {
-	border-radius: 32px;
-}
-
-.nowy {
-	font-family: 'Poltawski Nowy', serif;
-}
-.meri {
-	font-family: 'Merriweather', serif;
-	font-size: 11px;
-}
-#card1{
-	width: 200px;
-	height: 400px;
-	margin: auto;
-	margin-bottom: 5%;
-}
-.card-body{
-	width: inherit;
-	height: inherit;
-	background-color: #27221f;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-	backdrop-filter: blur(20px);
-	border-radius:8px;
-	outline: 1px solid #31274b;
-}
-
 /*Social Icons*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 .icons {
 	display: flex;
-	column-gap: 25px;
+	flex-wrap: wrap; /* Allow icons to wrap to the next line on smaller screens */
+	justify-content: center; /* Center icons horizontally */
+	gap: 15px; /* Adjust spacing between icons */
 }
 .icnbg {
 	background-color: #27221f;
@@ -222,14 +183,13 @@ nav {
 	display: inline-flex;
 	width: 45px;
 	height: 44px;
-	margin-left: 5%;
 	text-decoration: none;
 	font-size: 20px;
 	color: #fff;
-	border-radius: 46%;
+	border-radius: 50%; /* Use 50% for a perfect circle */
 	outline: 2px solid #fff;
-	transition-property: outline-offset, outline-color, background-color;
-	transition-duration: 0.25s;
+	transition: outline-offset 0.25s, outline-color 0.25s, background-color 0.25s;
+	margin: 5px; /* Adjust spacing around icons */
 }
 #eight {
 	font-size: 20px;
@@ -282,6 +242,60 @@ nav {
 		transform: rotate(-15deg);
 	}
 }
+
+/* Media Query for Mobile View */
+@media (max-width: 767px) {
+	.icons {
+		justify-content: center;
+	}
+	.icon {
+		width: 40px;
+		height: 40px;
+		font-size: 18px;
+	}
+}
+
+
+/*-----------------------------------------------*/
+/*Skills*/
+.second-color {
+ 	color: #31274b;
+}
+
+.h-auto {
+	height: auto;
+}
+/*.bg-light{
+	margin-left: 0px;
+}*/
+
+.rounded-im {
+	border-radius: 32px;
+}
+
+.nowy {
+	font-family: 'Poltawski Nowy', serif;
+}
+.meri {
+	font-family: 'Merriweather', serif;
+	font-size: 11px;
+}
+#card1{
+	width: 200px;
+	height: 400px;
+	margin: auto;
+	margin-bottom: 5%;
+}
+.card-body{
+	width: inherit;
+	height: inherit;
+	background-color: #27221f;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	backdrop-filter: blur(20px);
+	border-radius:8px;
+	outline: 1px solid #31274b;
+}
+
 
 /*RESUME*/
 :root {
